@@ -6,7 +6,7 @@ app = Flask(__name__)
 def index():
     return """
     <html>
-      <head><title>pepekkkk</title></head>
+      <head><title>pppeeekkkk</title></head>
       <body>
         <h1>Ujian BNSP</h1>
         <p>Nama: Luluk Dwi Kuncoro</p>
