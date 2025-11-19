@@ -5,7 +5,7 @@ pipeline {
         stage('Clone Repo') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com:LulukDWiKuncoro/BNSP.git'
+                    url: 'https://github.com/LulukDWiKuncoro/BNSP.git'
             }
         }
 
@@ -17,8 +17,7 @@ pipeline {
 
         stage('Stop Old Container') {
             steps {
-                sh 'docker stop bnsp-app || true'
-                sh 'docker rm bnsp-app || true'
+                sh 'docker rm -f bnsp-app || true'
             }
         }
 
@@ -29,3 +28,4 @@ pipeline {
         }
     }
 }
+
